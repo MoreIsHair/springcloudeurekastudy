@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gateway
+server:
+  port: 1446
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1443/eureka/,http://localhost:1449/eureka/
+

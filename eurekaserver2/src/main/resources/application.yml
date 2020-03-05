@@ -1,0 +1,13 @@
+server:
+  port: 1449
+spring:
+  application:
+    name: eurekaserver2
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eurekaserver1:1443/eureka/
+  instance:
+    hostname: localhost

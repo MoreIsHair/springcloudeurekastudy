@@ -1,0 +1,11 @@
+server:
+  port: 1448
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:1443/eureka/,http://localhost:1449/eureka/
+spring:
+  application:
+    name: consume1
